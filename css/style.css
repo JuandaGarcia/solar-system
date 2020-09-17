@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.solarSystem {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: black;
+	position: relative;
+}
+
+.sun {
+	width: 10em;
+	-webkit-filter: drop-shadow(0px 0px 60px rgb(255, 218, 41, 0.8));
+	filter: drop-shadow(0px 0px 60px rgb(255, 218, 41, 0.8));
+	animation: rotate 60s linear infinite;
+}
+
+.mercuryContainer {
+	position: absolute;
+	height: 15em;
+	width: 15em;
+	animation: rotate 6.8s linear infinite;
+	/* border: 1px solid rgb(255, 255, 255, 0.1); */
+	border-radius: 50%;
+}
+
+.mercury {
+	width: 15%;
+	animation: rotate 10s linear infinite;
+}
+
+.venusContainer {
+	position: absolute;
+	height: 20em;
+	width: 20em;
+	animation: rotate 9.3s linear infinite;
+	border-radius: 50%;
+}
+
+.venus {
+	width: 10%;
+	animation: rotate 5s linear infinite;
+}
+
+.earthContainer {
+	position: absolute;
+	height: 25em;
+	width: 25em;
+	animation: rotate 10.94s linear infinite;
+	border-radius: 50%;
+}
+
+.earth {
+	width: 10%;
+	animation: rotate 5s linear infinite;
+}
+
+.marsContainer {
+	position: absolute;
+	height: 30em;
+	width: 30em;
+	animation: rotate 13.5s linear infinite;
+	border-radius: 50%;
+}
+
+.mars {
+	width: 10%;
+	animation: rotate 5s linear infinite;
+}
+
+.jupiterContainer {
+	position: absolute;
+	height: 35em;
+	width: 35em;
+	animation: rotate 24.95s linear infinite;
+	border-radius: 50%;
+}
+
+.jupiter {
+	width: 10%;
+	animation: rotate 5s linear infinite;
+}
+
+.saturnContainer {
+	position: absolute;
+	height: 40em;
+	width: 40em;
+	animation: rotate 33.8s linear infinite;
+	border-radius: 50%;
+}
+
+.saturn {
+	width: 10%;
+	animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
