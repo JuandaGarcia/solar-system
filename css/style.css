@@ -7,10 +7,14 @@
 .solarSystem {
 	width: 100%;
 	min-height: 100vh;
+	font-size: 5px;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 	justify-content: center;
-	background: black;
+	background: url('../img/background.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
 }
 
@@ -26,13 +30,13 @@
 	height: 15em;
 	width: 15em;
 	animation: rotate 6.8s linear infinite;
-	/* border: 1px solid rgb(255, 255, 255, 0.1); */
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .mercury {
 	width: 15%;
-	animation: rotate 10s linear infinite;
+	animation: rotate 108299.17s linear infinite;
 }
 
 .venusContainer {
@@ -40,66 +44,113 @@
 	height: 20em;
 	width: 20em;
 	animation: rotate 9.3s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .venus {
-	width: 10%;
-	animation: rotate 5s linear infinite;
+	width: 12%;
+	animation: rotate 179889.57s linear infinite;
 }
 
 .earthContainer {
 	position: absolute;
-	height: 25em;
-	width: 25em;
+	height: 27em;
+	width: 27em;
 	animation: rotate 10.94s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .earth {
-	width: 10%;
-	animation: rotate 5s linear infinite;
+	width: 13%;
+	animation: rotate 700.65s linear infinite;
+}
+
+.moon {
+	position: absolute;
+	top: 4%;
+	left: 18%;
+	width: 4%;
+	transform-origin: -300%;
+	animation: rotate 6s linear infinite;
 }
 
 .marsContainer {
 	position: absolute;
-	height: 30em;
-	width: 30em;
+	height: 37em;
+	width: 37em;
 	animation: rotate 13.5s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .mars {
-	width: 10%;
-	animation: rotate 5s linear infinite;
+	width: 15%;
+	animation: rotate 1354.36s linear infinite;
 }
 
 .jupiterContainer {
 	position: absolute;
-	height: 35em;
-	width: 35em;
+	height: 57em;
+	width: 57em;
 	animation: rotate 24.95s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .jupiter {
-	width: 10%;
-	animation: rotate 5s linear infinite;
+	width: 20%;
+	animation: rotate 25.73s linear infinite;
 }
 
 .saturnContainer {
 	position: absolute;
-	height: 40em;
-	width: 40em;
+	height: 75em;
+	width: 75em;
 	animation: rotate 33.8s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
 .saturn {
-	width: 10%;
-	animation: rotate 5s linear infinite;
+	width: 22%;
+	animation: rotate 31.84s linear infinite;
 }
 
+.uranusContainer {
+	position: absolute;
+	height: 87em;
+	width: 87em;
+	animation: rotate 47.84s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.uranus {
+	width: 10%;
+	animation: rotate 79.28s linear infinite;
+}
+
+.neptuneContainer {
+	position: absolute;
+	height: 105em;
+	width: 105em;
+	animation: rotate 60s linear infinite;
+	border: 1px solid rgb(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.neptune {
+	width: 10%;
+	animation: rotate 120.68s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+	.solarSystem {
+		font-size: 3px;
+	}
+}
 @keyframes rotate {
 	from {
 		transform: rotate(0deg);
